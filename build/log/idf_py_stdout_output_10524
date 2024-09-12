@@ -1,0 +1,109 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 12 2024 23:52:21[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21ba4h (138148) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=00031bcc vaddr=3ffb0000 size=03e28h ( 15912) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000359fc vaddr=40080000 size=0a61ch ( 42524) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8ae78h (568952) map[0m
+[0;32mI (370) esp_image: segment 4: paddr=000caea0 vaddr=4008a61c size=0cc40h ( 52288) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) app_init: Application information:[0m
+[0;32mI (426) app_init: Project name:     my_project[0m
+[0;32mI (431) app_init: App version:      1[0m
+[0;32mI (435) app_init: Compile time:     Sep 12 2024 23:51:58[0m
+[0;32mI (441) app_init: ELF file SHA256:  e5d99d64f...[0m
+[0;32mI (447) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (452) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (457) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (462) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8058 len 00027FA8 (159 KiB): DRAM[0m
+[0;32mI (486) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (492) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 4009725C len 00008DA4 (35 KiB): IRAM[0m
+[0;32mI (506) spi_flash: detected chip: generic[0m
+[0;32mI (509) spi_flash: flash io: dio[0m
+[0;32mI (514) main_task: Started on CPU0[0m
+[0;32mI (524) main_task: Calling app_main()[0m
+[0;32mI (554) wifi station: opening NVS! done [0m
+[0;32mI (554) wifi station: ESP_WIFI_MODE_STA[0m
+I (564) wifi:wifi driver task: 3ffc0134, prio:23, stack:6656, core=0
+I (574) wifi:wifi firmware version: 0caa81945
+I (574) wifi:wifi certification version: v7.0
+I (574) wifi:config NVS flash: enabled
+I (574) wifi:config nano formating: disabled
+I (584) wifi:Init data frame dynamic rx buffer num: 32
+I (584) wifi:Init static rx mgmt buffer num: 5
+I (594) wifi:Init management short buffer num: 32
+I (594) wifi:Init dynamic tx buffer num: 32
+I (594) wifi:Init static rx buffer size: 1600
+I (604) wifi:Init static rx buffer num: 10
+I (604) wifi:Init dynamic rx buffer num: 32
+[0;32mI (614) wifi_init: rx ba win: 6[0m
+[0;32mI (614) wifi_init: accept mbox: 6[0m
+[0;32mI (614) wifi_init: tcpip mbox: 32[0m
+[0;32mI (624) wifi_init: udp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp mbox: 6[0m
+[0;32mI (634) wifi_init: tcp tx win: 5760[0m
+[0;32mI (634) wifi_init: tcp rx win: 5760[0m
+[0;32mI (634) wifi_init: tcp mss: 1440[0m
+[0;32mI (644) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (644) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (654) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (744) wifi:mode : sta (a0:dd:6c:0f:e6:8c)
+I (744) wifi:enable tsf
+[0;32mI (744) wifi station: wifi_init_sta finished.[0m
+[0;32mI (3164) wifi station: retry to connect to the STA[0m
+[0;32mI (5584) wifi station: retry to connect to the STA[0m
+[0;32mI (7994) wifi station: retry to connect to the STA[0m
+[0;32mI (10414) wifi station: retry to connect to the STA[0m
+I (10424) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (10424) wifi:state: init -> auth (0xb0)
+I (10434) wifi:state: auth -> assoc (0x0)
+I (10444) wifi:state: assoc -> run (0x10)
+I (20444) wifi:state: run -> init (0xcc00)
+I (20444) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (20444) wifi station: retry to connect to the STA[0m
+[0;32mI (22864) wifi station: Failed to connect to Wi-Fi, switching to Access Point mode.[0m
+E (22864) wifi:NAN WiFi stop
+I (22864) wifi:flush txq
+I (22864) wifi:stop sw txq
+I (22864) wifi:lmac stop hw txq
+[0;32mI (22874) wifi station: Failed to connect to SSID:ToRattt, password:12345678[0m
+[0;32mI (22874) main_task: Returned from app_main()[0m
+I (22884) wifi:mode : softAP (a0:dd:6c:0f:e6:8d)
+I (22894) wifi:Total power save buffer number: 16
+I (22894) wifi:Init max length of beacon: 752/752
+I (22894) wifi:Init max length of beacon: 752/752
+[0;32mI (22904) wifi station: ESP32 is now an Access Point with IP: 192.168.4.1[0m
+[0;32mI (22904) wifi station: Starting web server...[0m
+[0;32mI (22914) wifi station: Web server started successfully[0m
+[0;32mI (22924) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
